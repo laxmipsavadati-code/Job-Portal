@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northstar Jobs | Premium Careers Platform</title>
+    <meta
+      name="description"
+      content="Discover premium job opportunities, top companies, career resources, and modern hiring tools in one place."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loading">
+      <div class="loader"></div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <header class="navbar">
+      <a href="#home" class="brand">
+        <span class="brand-icon">N</span>
+        <span>Northstar Jobs</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#companies">Companies</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="nav-cta">Login</a>
+        <a href="#" class="nav-cta alt">Register</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-content reveal">
+          <span class="eyebrow">Trusted by 300k+ professionals</span>
+          <h1>Find your next high-impact role with confidence.</h1>
+          <p>
+            Explore premium opportunities from world-class companies and unlock a career that matches your ambitions.
+          </p>
+
+          <form class="search-panel" id="jobSearchForm">
+            <div class="input-group">
+              <i class="fas fa-briefcase"></i>
+              <input type="text" id="jobTitle" placeholder="Job title" />
+            </div>
+            <div class="input-group">
+              <i class="fas fa-location-dot"></i>
+              <input type="text" id="jobLocation" placeholder="Location" />
+            </div>
+            <div class="input-group">
+              <i class="fas fa-tags"></i>
+              <select id="jobCategory">
+                <option value="">Category</option>
+                <option value="design">Design</option>
+                <option value="engineering">Engineering</option>
+                <option value="marketing">Marketing</option>
+                <option value="finance">Finance</option>
+                <option value="product">Product</option>
+              </select>
+            </div>
+            <button type="submit">Search Jobs</button>
+          </form>
+
+          <div class="hero-badges">
+            <span><i class="fas fa-check"></i> Verified employers</span>
+            <span><i class="fas fa-check"></i> Remote & hybrid roles</span>
+            <span><i class="fas fa-check"></i> AI-assisted matching</span>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="hero-card-top">
+            <div>
+              <p class="card-label">Featured Match</p>
+              <h3>Senior Product Designer</h3>
+            </div>
+            <span class="premium-badge">Premium</span>
+          </div>
+          <div class="hero-card-body">
+            <div>
+              <p>Company</p>
+              <strong>Aurora Labs</strong>
+            </div>
+            <div>
+              <p>Location</p>
+              <strong>Remote · US</strong>
+            </div>
+            <div>
+              <p>Salary</p>
+              <strong>$165k - $190k</strong>
+            </div>
+          </div>
+          <div class="hero-card-footer">
+            <span><i class="fas fa-sparkles"></i> Fast-track interview</span>
+            <a href="#jobs" class="btn-link">View All Jobs</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section jobs-section" id="jobs">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Featured opportunities</span>
+          <h2>Handpicked jobs for ambitious professionals</h2>
+          <p>Browse the most relevant openings curated by our recruiting specialists.</p>
+        </div>
+
+        <div class="jobs-grid" id="jobsGrid">
+          <article class="job-card reveal" data-role="product designer" data-location="remote" data-category="design">
+            <div class="job-card-top">
+              <div class="job-logo gold">A</div>
+              <div>
+                <h3>Senior Product Designer</h3>
+                <p>Aurora Labs</p>
+              </div>
+            </div>
+            <div class="job-meta">
+              <span><i class="fas fa-location-dot"></i> Remote</span>
+              <span><i class="fas fa-dollar-sign"></i> $160k</span>
+              <span><i class="fas fa-clock"></i> Full-time</span>
+            </div>
+            <p>Lead premium design systems and shape product experiences for fast-growing SaaS teams.</p>
+            <div class="job-card-footer">
+              <span class="pill">Design</span>
+              <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+          </article>
+
+          <article class="job-card reveal" data-role="frontend engineer" data-location="new york" data-category="engineering">
+            <div class="job-card-top">
+              <div class="job-logo blue">N</div>
+              <div>
+                <h3>Frontend Engineer</h3>
+                <p>Northwave</p>
+              </div>
+            </div>
+            <div class="job-meta">
+              <span><i class="fas fa-location-dot"></i> New York</span>
+              <span><i class="fas fa-dollar-sign"></i> $145k</span>
+              <span><i class="fas fa-clock"></i> Hybrid</span>
+            </div>
+            <p>Build elegant, high-performance web experiences for a global fintech platform.</p>
+            <div class="job-card-footer">
+              <span class="pill">Engineering</span>
+              <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+          </article>
+
+          <article class="job-card reveal" data-role="marketing strategist" data-location="london" data-category="marketing">
+            <div class="job-card-top">
+              <div class="job-logo purple">S</div>
+              <div>
+                <h3>Marketing Strategist</h3>
+                <p>Silverline</p>
+              </div>
+            </div>
+            <div class="job-meta">
+              <span><i class="fas fa-location-dot"></i> London</span>
+              <span><i class="fas fa-dollar-sign"></i> $120k</span>
+              <span><i class="fas fa-clock"></i> Full-time</span>
+            </div>
+            <p>Drive growth through thoughtful campaigns, partnerships, and audience insight.</p>
+            <div class="job-card-footer">
+              <span class="pill">Marketing</span>
+              <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+          </article>
+
+          <article class="job-card reveal" data-role="financial analyst" data-location="singapore" data-category="finance">
+            <div class="job-card-top">
+              <div class="job-logo violet">F</div>
+              <div>
+                <h3>Financial Analyst</h3>
+                <p>FinaVista</p>
+              </div>
+            </div>
+            <div class="job-meta">
+              <span><i class="fas fa-location-dot"></i> Singapore</span>
+              <span><i class="fas fa-dollar-sign"></i> $110k</span>
+              <span><i class="fas fa-clock"></i> Contract</span>
+            </div>
+            <p>Interpret financial metrics and support strategic growth planning across markets.</p>
+            <div class="job-card-footer">
+              <span class="pill">Finance</span>
+              <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+          </article>
+
+          <article class="job-card reveal" data-role="product manager" data-location="berlin" data-category="product">
+            <div class="job-card-top">
+              <div class="job-logo gold">P</div>
+              <div>
+                <h3>Product Manager</h3>
+                <p>PixelForge</p>
+              </div>
+            </div>
+            <div class="job-meta">
+              <span><i class="fas fa-location-dot"></i> Berlin</span>
+              <span><i class="fas fa-dollar-sign"></i> $150k</span>
+              <span><i class="fas fa-clock"></i> Full-time</span>
+            </div>
+            <p>Lead customer-focused roadmap execution for a high-growth B2B platform.</p>
+            <div class="job-card-footer">
+              <span class="pill">Product</span>
+              <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+          </article>
+
+          <article class="job-card reveal" data-role="ux researcher" data-location="remote" data-category="design">
+            <div class="job-card-top">
+              <div class="job-logo blue">U</div>
+              <div>
+                <h3>UX Researcher</h3>
+                <p>Voyage</p>
+              </div>
+            </div>
+            <div class="job-meta">
+              <span><i class="fas fa-location-dot"></i> Remote</span>
+              <span><i class="fas fa-dollar-sign"></i> $130k</span>
+              <span><i class="fas fa-clock"></i> Part-time</span>
+            </div>
+            <p>Turn customer insight into product strategy with a modern, data-led approach.</p>
+            <div class="job-card-footer">
+              <span class="pill">Design</span>
+              <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-state reveal" id="emptyState">No jobs match your current filters. Try a broader search.</p>
+      </section>
+
+      <section class="section companies-section" id="companies">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Top companies</span>
+          <h2>Join the teams shaping the future</h2>
+          <p>Discover organizations that value design, growth, and high-performing talent.</p>
+        </div>
+        <div class="companies-grid">
+          <article class="company-card reveal">
+            <div class="company-logo large">A</div>
+            <h3>Aurora Labs</h3>
+            <p>AI-first product studio</p>
+            <div class="company-tags">
+              <span>Remote</span>
+              <span>120+ openings</span>
+            </div>
+          </article>
+          <article class="company-card reveal">
+            <div class="company-logo large">N</div>
+            <h3>Northwave</h3>
+            <p>Next-gen fintech platform</p>
+            <div class="company-tags">
+              <span>Hybrid</span>
+              <span>85 openings</span>
+            </div>
+          </article>
+          <article class="company-card reveal">
+            <div class="company-logo large">S</div>
+            <h3>Silverline</h3>
+            <p>Growth marketing leader</p>
+            <div class="company-tags">
+              <span>Remote</span>
+              <span>64 openings</span>
+            </div>
+          </article>
+          <article class="company-card reveal">
+            <div class="company-logo large">V</div>
+            <h3>Voyage</h3>
+            <p>Experience-led innovation</p>
+            <div class="company-tags">
+              <span>Hybrid</span>
+              <span>92 openings</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section categories-section" id="categories">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Popular categories</span>
+          <h2>Explore roles across every growth stage</h2>
+        </div>
+        <div class="categories-grid">
+          <article class="category-card reveal">
+            <i class="fas fa-code"></i>
+            <h3>Engineering</h3>
+            <p>1,200+ roles</p>
+          </article>
+          <article class="category-card reveal">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Design</h3>
+            <p>640+ roles</p>
+          </article>
+          <article class="category-card reveal">
+            <i class="fas fa-chart-line"></i>
+            <h3>Marketing</h3>
+            <p>770+ roles</p>
+          </article>
+          <article class="category-card reveal">
+            <i class="fas fa-wallet"></i>
+            <h3>Finance</h3>
+            <p>430+ roles</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section tips-section" id="about">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Career tips</span>
+          <h2>Grow with confidence and clarity</h2>
+        </div>
+        <div class="tips-grid">
+          <article class="tip-card reveal">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Craft a standout profile</h3>
+            <p>Showcase measurable achievements and a clear story that recruiters remember.</p>
+          </article>
+          <article class="tip-card reveal">
+            <i class="fas fa-comments"></i>
+            <h3>Prepare for interviews</h3>
+            <p>Practice behavioral stories, salary positioning, and thoughtful follow-up questions.</p>
+          </article>
+          <article class="tip-card reveal">
+            <i class="fas fa-network-wired"></i>
+            <h3>Build your network</h3>
+            <p>Engage with peers, mentors, and hiring managers to unlock warm introductions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section testimonials-section">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Success stories</span>
+          <h2>Trusted by ambitious professionals</h2>
+        </div>
+        <div class="testimonial-carousel reveal">
+          <button class="carousel-btn prev" aria-label="Previous testimonial"><i class="fas fa-arrow-left"></i></button>
+          <div class="testimonial-track">
+            <article class="testimonial-card active">
+              <p>“The experience felt premium from beginning to end. I found a role that matched my values and salary goals in just two weeks.”</p>
+              <div>
+                <strong>Amira Chen</strong>
+                <span>Product Designer</span>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <p>“The search filters and curated recommendations made the platform incredibly efficient. I landed my dream job faster than expected.”</p>
+              <div>
+                <strong>Daniel Brooks</strong>
+                <span>Frontend Engineer</span>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <p>“The interface is elegant, the roles are relevant, and the career resources really helped me prepare for my interviews.”</p>
+              <div>
+                <strong>Sophia Patel</strong>
+                <span>Marketing Lead</span>
+              </div>
+            </article>
+          </div>
+          <button class="carousel-btn next" aria-label="Next testimonial"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </section>
+
+      <section class="section stats-section">
+        <div class="stats-card reveal">
+          <h3 data-count="1200" data-suffix="+">0</h3>
+          <p>Jobs posted this month</p>
+        </div>
+        <div class="stats-card reveal">
+          <h3 data-count="98" data-suffix="%">0</h3>
+          <p>Employer satisfaction</p>
+        </div>
+        <div class="stats-card reveal">
+          <h3 data-count="300" data-suffix="k">0</h3>
+          <p>Active professionals</p>
+        </div>
+        <div class="stats-card reveal">
+          <h3 data-count="24" data-suffix="/7">0</h3>
+          <p>Hiring support</p>
+        </div>
+      </section>
+
+      <section class="section faq-section">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Frequently asked questions</span>
+          <h2>Everything you need to know</h2>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item reveal active">
+            <button class="faq-question">
+              Is this platform free to use?
+              <i class="fas fa-plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, job seekers can browse openings and apply for free. Premium tools are available for select career services.</p>
+            </div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-question">
+              Can I apply to multiple roles?
+              <i class="fas fa-plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. You can save roles, compare them, and apply to as many as you like.</p>
+            </div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-question">
+              Do you offer remote opportunities?
+              <i class="fas fa-plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, our platform features remote, hybrid, and on-site opportunities from companies around the world.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section newsletter-section">
+        <div class="newsletter-card reveal">
+          <div>
+            <span class="eyebrow">Stay inspired</span>
+            <h2>Get curated roles and expert career tips weekly.</h2>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="form-message" id="newsletterMessage"></p>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="contact-card reveal">
+          <div class="contact-info">
+            <span class="eyebrow">Let’s connect</span>
+            <h2>Need help finding the right fit?</h2>
+            <p>Reach out and our team will guide you through the next step of your journey.</p>
+            <ul>
+              <li><i class="fas fa-envelope"></i> support@northstarjobs.com</li>
+              <li><i class="fas fa-phone"></i> +1 (800) 555-0199</li>
+              <li><i class="fas fa-map-marker-alt"></i> 84 Market Street, New York</li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <input type="text" id="contactName" placeholder="Your name" required />
+            <input type="email" id="contactEmail" placeholder="Your email" required />
+            <textarea id="contactMessage" rows="5" placeholder="Write your message" required></textarea>
+            <button type="submit">Send Message</button>
+            <p class="form-message" id="contactMessageBox"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div>
+          <a href="#home" class="brand footer-brand">
+            <span class="brand-icon">N</span>
+            <span>Northstar Jobs</span>
+          </a>
+          <p>Premium job discovery crafted for ambitious professionals and modern companies.</p>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#companies">Companies</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><i class="fas fa-envelope"></i> support@northstarjobs.com</li>
+            <li><i class="fas fa-phone"></i> +1 (800) 555-0199</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Northstar Jobs. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
